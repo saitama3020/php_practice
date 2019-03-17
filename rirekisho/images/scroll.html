@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>すくろーつ実験</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body style="text-align:center;">
+    <h1>スクロール実験</h1>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <p>こんにちは！</p>
+    <div id="back-to-top" style="position:fixed;right:5px;bottom:5px;"><a href="#"><img src="back-to.png"></a></div>
+    <div id="pos" style="position:fixed;left:5px;bottom:5px;">
+
+    </div>
+    <script type="text/javascript">
+      $(function(){
+        $('#back-to-top').hide();
+
+        $(window).scroll(function(){
+          $('#pos').text($(this).scrollTop());
+
+          if($(this).scrollTop() > 60){
+            $('#back-to-top').fadeIn();
+          } else {
+            $('#back-to-top').fadeOut();
+          }
+        });
+
+        $('#back-to-top a').click(function() {
+          $('html, body').animate({
+            scrollTop:0
+          }, 500);
+          return false;
+        });
+
+      });
+    </script>
+  </body>
+</html>
